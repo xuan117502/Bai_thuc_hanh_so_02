@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+ // Khai bao cau truc sinh vien
+typedef struct SinhVien {
+    char hoTen[50];
+    char maSV[20];
+    float diem1;
+    float diem2;
+    float diem3;
+} SinhVien;
+
+// Khai bao nut trong danh sach lien ket don
+typedef struct Node {
+    SinhVien data;
+    struct Node *next;
+} Node;
+
+// Khai bao danh sach lien ket don
+typedef struct {
+    Node *head;
+    Node *tail;
+} List;
+
+int main() {
+    List ds;
+    ds.head = NULL;
+    ds.tail = NULL;
+
+    return 0;
+}
