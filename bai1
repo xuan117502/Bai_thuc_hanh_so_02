@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    float a[100];
+    float *p;
+
+    // Nhap so luong phan tu
+    printf("Nhap so phan tu n: ");
+    scanf("%d", &n);
+
+    // Nhap mang bang con tro
+    p = a;
+    for (i = 0; i < n; i++) {
+        printf("a[%d] = ", i);
+        scanf("%f", p + i);
+    }
+
+    // In mang bang con tro
+    printf("Mang vua nhap la: ");
+    for (i = 0; i < n; i++) {
+        printf("%.2f ", *(p + i));
+    }
+
+    return 0;
+}
